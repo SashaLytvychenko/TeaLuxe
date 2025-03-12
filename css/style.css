@@ -79,6 +79,17 @@ body {
   color: var(--color-dark-brand);
   position: relative;
 }
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+}
+
+/* .feedback__list-item.feedback__list-item--hide {
+  display: none;
+} */
 
 button {
   padding: 0;
@@ -206,7 +217,67 @@ a {
   line-height: normal;
 }
 
+/* Assortment section */
+
+.assortment {
+  padding-bottom: 150px;
+}
+
+.assortment__list {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
+
+.assortment__img {
+  max-width: 208px;
+  max-height: 208px;
+  width: 100%;
+}
+
+.assortment__name {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: normal;
+}
+
+/* Feedback section */
+
+.feedback {
+  padding: 60px 0;
+  background-color: var(--color-light-rare);
+}
+
+.feedback__list {
+  display: flex;
+  justify-content: center;
+  gap: 0 26px;
+}
+
+.feedback__list-item {
+  flex-basis: 280px;
+}
+
+.feedback__text {
+  line-height: normal;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.blockquote__cite {
+  font-weight: 600;
+  font-style: normal;
+}
+/* Tea blog section */
+
+.tea-blog {
+  padding: 150px 0;
+}
 /* Adaptive */
+/* <------------------------------------------------------------------> */
 
 @media (max-width: 1000px) {
   .user-actions__item--search {
@@ -224,6 +295,26 @@ a {
   .blockquote__text {
     padding-top: 120px;
     padding-bottom: 135px;
+  }
+  /* Assortment section */
+
+  .assortment {
+    padding-bottom: 120px;
+  }
+  .title {
+    margin-bottom: 30px;
+  }
+  .assortment__list {
+    gap: 0;
+  }
+  /* Feedback section */
+  .feedback__list-item:last-child {
+    display: none;
+  }
+  /* Tea blog section */
+
+  .tea-blog {
+    padding: 120px 0;
   }
 }
 
@@ -316,6 +407,20 @@ a {
   .blockquote__text {
     max-width: 640px;
   }
+  /* Assortment section */
+  .assortment__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* Feedback section */
+
+  .feedback__list-item:last-child {
+    display: block;
+  }
+  .feedback__list {
+    flex-wrap: wrap;
+    gap: 30px 76px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -334,6 +439,10 @@ a {
     font-size: 16px;
     padding: 60px 0;
   }
+  .feedback__list {
+    gap: 15px 5px;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 480px) {
@@ -345,6 +454,24 @@ a {
   }
   .menu__list {
     width: 360px;
+  }
+  /* Assortment section */
+  .assortment {
+    padding-bottom: 60px;
+  }
+  /* Feedback */
+  .feedback {
+    padding: 50px 0;
+  }
+  .feedback__list {
+    gap: 30px 20px;
+  }
+  .feedback__list-item {
+    flex-basis: 220px;
+  }
+  /* Tea blog */
+  .tea-blog {
+    padding: 60px 0;
   }
 }
 
@@ -373,5 +500,40 @@ a {
   }
   .top__inner {
     min-height: 368px;
+  }
+  /* Assortment section */
+
+  .assortment {
+    padding-bottom: 80px;
+  }
+  .assortment__img {
+    max-width: 152px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Feedback section */
+
+  .feedback__title {
+    font-size: 24px;
+  }
+
+  .feedback__list {
+    gap: 30px;
+  }
+  .feedback__list-item {
+    flex-basis: 100%;
+  }
+
+  .feedback__list-item:first-child,
+  .feedback__list-item:last-child {
+    display: none;
+  }
+
+  /* Tea blog */
+  .tea-blog {
+    padding: 50px 0;
   }
 }
