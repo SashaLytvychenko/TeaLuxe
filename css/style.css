@@ -276,6 +276,60 @@ a {
 .tea-blog {
   padding: 150px 0;
 }
+
+.tea-blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 58px;
+  justify-content: space-between;
+}
+
+.tea-blog__item {
+  flex-basis: 542px;
+  display: flex;
+  gap: 20px;
+}
+
+.tea-blog__item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tea-blog__item-title {
+  font-family: "Cormorant", serif;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tea-blog__item-author {
+  font-size: 13px;
+}
+
+.tea-blog__item-link {
+  font-size: 13px;
+  position: relative;
+}
+
+.tea-blog__item-link::after {
+  content: "";
+  background-image: url(../images/arrow.svg);
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  margin-left: 8px;
+  bottom: 5px;
+}
+
+.tea-blog__link {
+  margin: 72px auto 0;
+  padding: 12px 41px;
+  display: block;
+  border: 1px solid var(--color-dark-brand);
+  width: 152px;
+}
+
 /* Adaptive */
 /* <------------------------------------------------------------------> */
 
