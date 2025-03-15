@@ -62,6 +62,21 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 p,
 h1,
 h2,
@@ -663,6 +678,25 @@ a {
     flex-wrap: wrap;
     gap: 30px 210px;
   }
+  /* Footer */
+  .footer__blockquote {
+    width: 270px;
+  }
+  .footer__blockquote-text {
+    margin-top: 0;
+  }
+  .footer__inner {
+    margin-bottom: 55px;
+  }
+  .footer__bottom {
+    gap: 40px;
+  }
+  .footer__nav-logo {
+    margin-right: 35px;
+  }
+  .footer__contacts {
+    width: 270px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -799,6 +833,22 @@ a {
   .prioritise__list {
     gap: 30px 133px;
   }
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer__products,
+  .footer__company {
+    grid-row: span 3;
+  }
+  .footer__contacts {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .footer__bottom {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -895,6 +945,51 @@ a {
   }
   .prioritise__list {
     gap: 50px;
+  }
+  /* Footer */
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__blockquote {
+    width: 100%;
+  }
+  .footer__blockquote-text {
+    margin-bottom: 10px;
+  }
+  .footer__contacts {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .footer__contacts-title {
+    margin-bottom: 20px;
+  }
+  .footer__contacts-text {
+    text-align: center;
+  }
+  .footer__nav {
+    flex-wrap: nowrap;
+  }
+  .footer__social {
+    margin-left: 30px;
+  }
+  .footer__copy {
+    margin-right: auto;
+  }
+  .footer__products {
+    margin-right: auto;
+    padding-right: 20px;
+  }
+  .footer__company {
+    padding-right: 20px;
+    margin-right: 55px;
+  }
+  .footer__products-title,
+  .footer__company-title {
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding: 50px 0 10px;
   }
 }
 
@@ -1001,5 +1096,24 @@ a {
   }
   .prioritise__list {
     gap: 40px;
+  }
+  /* footer */
+  .footer__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__company {
+    margin-right: 0;
+    padding-right: 15px;
+  }
+  .footer__products {
+    padding-right: 10px;
+  }
+  .footer__social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__bottom {
+    gap: 50px;
   }
 }
