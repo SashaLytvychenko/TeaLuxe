@@ -1,0 +1,20 @@
+.assortment {
+  padding-bottom: 150px;
+  &__list {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+  }
+  &__img {
+    max-width: 208px;
+    max-height: 208px;
+    width: 100%;
+  }
+  &__name {
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: normal;
+  }
+}

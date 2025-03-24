@@ -1,0 +1,30 @@
+.top {
+  background-image: url(../images/top.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 500px;
+    font-weight: 400;
+    color: var(--color-light-brand);
+    font-family: "Cormorant", serif;
+  }
+  &__title {
+    display: flex;
+    max-width: 790px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  &__text {
+    font-size: 24px;
+    max-width: 558px;
+    margin-bottom: 48px;
+    line-height: normal;
+  }
+}
